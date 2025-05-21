@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class IMC extends StatefulWidget {
+  const IMC({super.key});
 
   @override
-  State<Login> createState() => _LoginScreenState();
+  State<IMC> createState() => _IMCScreenState();
 }
 
-class _LoginScreenState extends State<Login> {
+class _IMCScreenState extends State<IMC> {
   String peso = '';
   String altura = '';
   String resultadoIMC = '';
@@ -45,7 +45,7 @@ class _LoginScreenState extends State<Login> {
     return Scaffold(
       appBar: AppBar(
         title: Text('IMC'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: const Color.fromARGB(255, 158, 39, 158),
       ),
       body: Center(
         child: Column(
@@ -53,7 +53,7 @@ class _LoginScreenState extends State<Login> {
           children: [
             Text(
               'Peso',
-              style: TextStyle(fontSize: 18, color: Colors.blueGrey),
+              style: TextStyle(fontSize: 18, color: const Color.fromARGB(255, 0, 0, 0)),
             ),
             TextField(
               decoration: InputDecoration(
@@ -69,7 +69,7 @@ class _LoginScreenState extends State<Login> {
             ),
             Text(
               'Altura',
-              style: TextStyle(fontSize: 18, color: Colors.blueGrey),
+              style: TextStyle(fontSize: 18, color: const Color.fromARGB(255, 0, 0, 0)),
             ),
             TextField(
               decoration: InputDecoration(
@@ -92,7 +92,7 @@ class _LoginScreenState extends State<Login> {
             SizedBox(height: 20),
             Text(
               resultadoIMC,
-              style: TextStyle(fontSize: 18, color: Colors.blueGrey),
+              style: TextStyle(fontSize: 18, color: const Color.fromARGB(255, 0, 0, 0)),
               textAlign: TextAlign.center,
             ),
           ],
